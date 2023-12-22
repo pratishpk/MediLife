@@ -244,15 +244,16 @@ body {
 
 #next,
 #prev {
-    position: absolute;
+     position: absolute;
     top: 40%;
-    color: #fff;
+    color: rgb(1, 89, 121);
     background-color: transparent;
     border: none;
     font-size: xxx-large;
     font-family: monospace;
     font-weight: bold;
     left: 50px;
+    z-index: 1;
 
 }
 
