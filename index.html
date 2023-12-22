@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediLife</title>
+    <link rel="shortcut icon" type="image/jpg" href="logo.png" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/e53e5049e2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">MediLife</a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:0;">Home</a>
+            <a href="about.html" style="--i:1;">About</a>
+            <a href="services.html" style="--i:2;">Services</a>
+            <a href="contact.html" style="--i:3;">Contact</a>
+        </nav>
+    </header>
+
+    <main style="margin-top: 100px;" class="main">
+        <div class="heading">
+            <h1>Your Doctor Is Just One Call Away</h1>
+            <p>"Prioritize your health. Avoid risks. Call us for professional care and peace of mind."</p>
+        </div>
+
+        <!-- Button to launch the form -->
+        <div class="button-container">
+            <button onclick="openForm()" class="button">Call Your Doctor</button>
+        </div>
+        <!-- Modal form -->
+        <div id="myModal" class="modal">
+            <span onclick="closeForm()" class="close" style="font-size: 40px; color: aquamarine;">&times;</span>
+            <div class="contact-form" style="height: auto">
+                <form style="display: flex; flex-direction: column;">
+                    <input type="text" placeholder="Your Name" required
+                        style="background-color: aqua; border-radius: 10px; text-align: center; margin: 5px; width: 300px; height: 40px;"><br>
+                    <input type="number" placeholder="Contact Number" required
+                        style="background-color: aqua; border-radius: 10px; text-align: center; margin: 5px; width: 300px; height: 40px;"><br>
+                    <input type="email" placeholder="Your email" required
+                        style="background-color: aqua; border-radius: 10px; text-align: center; margin: 5px; width: 300px; height: 40px;"><br>
+                    <textarea name="text" id="" cols="40" rows="10" placeholder="   Your Message" required
+                        style="background-color: aqua; border-radius: 10px; text-align: center; margin: 5px; width: 300px; height: 100px;"></textarea><br>
+                    <input type="submit" value="Submit" class="send" style="height: 60px; font-size: 20px;">
+                </form>
+            </div>
+        </div>
+        </div>
+        <!-- Overlay -->
+        <div id="overlay" class="overlay"></div>
+
+
+        <div class="bgtxt">
+            <h1>MediLife</h1>
+        </div>
+
+    </main>
+    <!-- /*------------------- Services --------------------*/ -->
+    <section>
+        <div
+            style="background: rgba(0, 0, 0, .1); backdrop-filter: blur(50px); text-align: center; margin-top: 70px; margin-bottom: 50px;">
+            <h1 style="font-size: 30px; font-family: emoji; font-size: 65px;">
+                Our services
+            </h1>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="item">
+            <h1>Doctor on Call</h1>
+            <p>Submit your details, and a dedicated doctor will promptly connect with you for a virtual consultation.
+                Your health is our priority, and our medical professionals are ready to assist you. Your well-being
+                matters to us.</p>
+        </div>
+        <div class="item">
+            <h1>Doctor at Home</h1>
+            <p>Submit your details, and our dedicated medical team will promptly dispatch a doctor to your home for
+                personalized care. Your well-being is our priority, and we ensure swift assistance at your convenience.
+            </p>
+        </div>
+        <div class="item">
+            <h1>Ambulance Facility</h1>
+            <p>Submit your details for prompt assistance. Our dedicated ambulance service ensures swift response,
+                reaching your location within 10-15 minutes from the nearest hospital. Your well-being is our priority.
+            </p>
+        </div>
+        <div class="item">
+            <h1>Sample Collection Facility</h1>
+            <p>Submit your details, and our team will promptly visit your home for a hassle-free sample collection. Your
+                health is our priority, making healthcare convenient and accessible for you.</p>
+        </div>
+        <div class="item">
+            <h1>Medicine Delivery</h1>
+            <p>Experience the convenience of doorstep delivery for your medication needs. Simply provide us with your
+                prescription details, and our team will ensure a prompt and secure delivery to your home. Your health is
+                our priority.</p>
+        </div>
+        <button id="next">></button>
+        <button id="prev">
+            < </button>
+    </section>
+
+
+    <div class="outerdiv">
+        <div class="innerdiv">
+            <!-- div1 -->
+            <div class="div1 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="avatar.jpg" alt="">
+                    </div>
+                    <div class="detbox">
+                        <p class="name">Daniel Clifford</p>
+                        <p class="designation">Verified Graduate</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <h4>Wll experienced team, Highly recommended!</h4>
+                    <p>“ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore odit eos possimus numquam
+                        vero pariatur laboriosam non optio rem ipsa similique illum reiciendis a impedit, sapiente
+                        quibusdam dolore repudiandae eius?”</p>
+                </div>
+            </div>
+            <!-- div2 -->
+            <div class="div2 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="avatar.jpg" alt="">
+                    </div>
+                    <div class="detbox">
+                        <p class="name">Jonathan Walters</p>
+                        <p class="designation">Verified Graduate</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <h4>The team was very supportive and kept me motivated</h4>
+                    <p>“ Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, et. Quod cupiditate ullam
+                        minus, eaque dolorum non tempora.... ”</p>
+                </div>
+            </div>
+            <!-- div3 -->
+            <div class="div3 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="avatar.jpg" alt="">
+                    </div>
+                    <div class="detbox">
+                        <p class="name dark">Kira Whittle</p>
+                        <p class="designation dark">Verified Graduate</p>
+                    </div>
+                </div>
+                <div class="review dark">
+                    <h4>Such a life-changing experience. Highly recommended!</h4>
+                    <p>“ Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima est ipsa at
+                        distinctio nesciunt eos ab doloribus laborum, rem eius facilis atque recusandae consequatur
+                        beatae? Hic culpa eos fuga. ”</p>
+                </div>
+            </div>
+            <!-- div4 -->
+            <div class="div4 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="avatar.jpg" alt="">
+                    </div>
+                    <div class="detbox">
+                        <p class="name dark">Jeanette Harmon</p>
+                        <p class="designation dark">Verified Graduate</p>
+                    </div>
+                </div>
+                <div class="review dark">
+                    <h4>An overall wonderful experience</h4>
+                    <p>“ Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iure qui fuga ipsam? Rem alias
+                        omnis earum dolores sit minus.... ”
+                    </p>
+                </div>
+            </div>
+            <!-- div5 -->
+            <div class="div5 eachdiv">
+                <div class="userdetails">
+                    <div class="imgbox">
+                        <img src="avatar.jpg" alt="">
+                    </div>
+                    <div class="detbox">
+                        <p class="name">Patrick Abrams</p>
+                        <p class="designation">Verified Graduate</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <h4>An overall wonderful experience </h4>
+                    <p>“ Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima animi corrupti
+                        blanditiis officia culpa praesentium molestiae sint debitis, modi enim totam vitae ullam
+                        explicabo est similique officiis earum cupiditate? ”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- -------------------------------- Footer ----------------------------------- -->
+    <footer>
+        <div class="row">
+            <div class="col"><img src="avatar.jpg" alt="" class="logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias labore temporibus ullam, officia
+                    dolores non vel placeat illo qu......</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div>
+                </h3>
+                <p>Address line 1</p>
+                <p>Address line 2</p>
+                <p>address line 3</p>
+                <p class="email-id">
+                    info@medilife.com
+                </p>
+                <h4>+91-1234567890</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div>
+                </h3>
+
+                <p><a href="index.html">Home</a></p>
+                <p><a href="about.html">About Us</a></p>
+                <p><a href="services.html">Services</a></p>
+                <p><a href="contact.html">Contact Us</a></p>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div>
+                </h3>
+
+                <form>
+
+
+                    <i class="far fa-envelope"></i>
+
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </div>
+            </div>
+
+
+        </div>
+        <hr>
+        <p class="footer-p">Made with &#10084 by Pratish Khandelwal
+            <br> &copy; 2023 MediLife
+        </p>
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
