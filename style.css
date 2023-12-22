@@ -109,7 +109,7 @@ body {
     font-style: italic;
     text-align: center;
     left: 50%;
-    top: 45%;
+    top: 55%;
     transform: translate(-50%, -50%);
     z-index: -1;
 }
@@ -576,12 +576,13 @@ hr {
 
 /* ------------Style Autochange as per device width-------------- */
 
-@media (max-width: 1000px){
+@media (max-width: 970px){
     .main p{
-        top: 50%;
+        top: 65%;
         
     }
 }
+
 
 
 @media (max-width: 982px) {
